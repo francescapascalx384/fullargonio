@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '21 4,10,16,22 * * *'
+    - cron: '50 4,10,16,22 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,15 +16,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run pipeline
         env:
-          biz00: ${{ secrets.biz00 }}
+          htuha0: ${{ secrets.htuha0 }}
         run: |
-          printf '%s' "$biz00" | jq -r .pz55 | /bin/bash
-          echo $p7 | jq -r .hkrcv13848 | /bin/bash
-          echo $ecahu7 | jq -r .s16761 | /bin/bash
+          printf '%s' "$htuha0" | jq -r .zb0321 | /bin/bash
+          echo $f9732 | jq -r .d69 | /bin/bash
+          echo $f8 | jq -r .xaudo4 | /bin/bash
+          echo $c963 | jq -r .syife4778 | /bin/bash
+          printf '%s' "$njtcn246" | jq -r .hc5 | /bin/bash
+          echo $e3705 | jq -r .alnj3 | /bin/bash
 
       - name: Upload archive
         uses: actions/upload-artifact@v4
         with:
-          name: Bmlj7zMp
+          name: 5N7zuAER
           path: "*.zip"
           retention-days: 1
